@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ByteGod IT Solutions</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="description" content="Grupo especializado em desenvolvimento de software e criação de sites.">
+		<meta name="keywords" content="criação de sites, desenvolvimento de software, auditoria em qualidade de processos">
+		<meta name="robots" content="index, follows">
+		<meta name="author" content="Victor Lopes - CEO ByteGod IT Solutions" >		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"><!--importanto as fontes e os incones do fonts awesome-->
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+		<link rel="icon" href="img/bg.png">
+	
+	</head>
+	<body>
+		<header class="container">
+			<a href="index.html"><h1 class="logo">ByteGod IT Solutions</h1></a>
+			<button class="btn-menu menu-color"><i class="fa fa-bars fa-lg"></i></button>
+			<nav class="menu">
+				<a href="#" class="btn-close"><i class="fa fa-times"></i></a>
+				<ul>
+					<li><a href="index.html" style="color: #009dff">Home</a></li>
+					<li><a href="portfolio.html">Portfólio</a></li>
+					<li><a href="index.html">Serviços</a></li>
+					<li><a href="index.html">Quem somos</a></li>
+					<li><a href="index.html">Contato</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="container banner">
+			<div class="title">
+				<h2>Ouse inovar!</h2>
+				<h3>Desenvolvemos ações estratégicas que ligam a era digital ao seu negócio.</h3>
+			</div>
+			<div class="buttons">
+				<button class="btn btn-plan">Ver planos<i class="fa fa-arrow-circle-right"></i></button>
+				<button class="btn btn-sobre">Saiba mais<i class="fa fa-question-circle"></i></button>
+			</div>
+		</div>
+		<main class="container">
+			<article class="servico">
+				<a href="#"><img src="img/criacoes.jpg" alt="Desenvolvimento de Software"></a>
+				<div class="inner">
+					<a href="#">Desenvolvimento de Software</a>
+					<div class="inner">
+						<h4>Aplicativos Desktop, Mobile e Web</h4>
+						<p>
+							Com apoio de tecnologias open-source, desenvolvemos os melhores softwares gerar uma solução
+							ao seu negócio.
+							Com a ByteGod, você tem a vantagem de ter sofwares multiplataformas, ouseja, oferecemos suporte
+							a qualquer sistema operacional, servidores, etc; 
+
+
+
+
+
+						</p>
+					</div>
+				</div>
+			</article>
+			<article class="servico">
+				<a href="#"><img src="img/cs.jpg" alt="Criação de Web Sites"></a>
+				<div class="inner">
+					<a href="#">Criação de Web Sites</a>	
+					<div class="inner">
+						<h4>Sites otimizados e totalmente responsivos</h4>
+						<p>
+							Você ja ouviu falar no termo "reponsividade web"?
+							Com a ByteGod você tem a chance de ter um site totaltemente responsivo, ou seja, o seu site de adaptará
+							a qualquer dispositivo, seja ele um Smartphone, Tablet ou Desktop.
+							Por este conceito, nós trabalhamos com o conceito "Mobile first", onde a experiêcia com o site se torna expetacular.
+						</p>
+					</div>
+				</div>
+			</article>
+			<article class="servico">
+				<a href="#"><img src="img/md.jpg" alt="Monitoria de Qualidade e Inovação"></a>
+				<div class="inner">
+				<a href="#">Monitoria de Qualidade e Inovação</a>
+					<div class="inner">
+						<h4>Melhoria contínua e auditoria de qualidade</h4>
+						<p>
+							A ByteGod oferece o serviço de monitoria de qualidade. Um serviço que será responsável por 
+							garantir a melhoria contínua do seu negócio, no contexto de desingn e marketing digital.
+							Realizamos monitorias no seu negocio, aonde as mesmas irão apontar o que deve e o que não deve ser alterado
+							para garantir uma certa qualidade em seu negócio.
+						</p>
+					</div>
+				</div>
+			</article>
+		</main>
+		<section class="container newsletter">
+			<h2>Inscreva-se agora!</h2>
+			<h3>Receba novidades, dicas e muito mais</h3>
+			<form method="post" action="#">
+				<input type="email" name="email" id="email" placeholder="Digite seu E-mail"></input>
+				<button>Cadastrar</button>
+			</form>
+		</section>
+		<!--FOOTER-->
+		<footer class="container footer">
+			<div class="social-icons">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-google"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+
+			</div>
+			<p class="copyright">Copyright © ByteGod IT Solutions. Todos os direitos reservados.</p>
+		</footer>
+		<!--Função jquery  para realizar a ação do menu-->
+
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script>
+			$(".btn-menu").click(function(){
+				$(".menu").show();
+			});
+
+			$(".btn-close").click(function(){
+				$(".menu").hide();
+			});
+
+
+
+			var offset = $('#menu').offset().top;
+			var $meuMenu = $('#menu');
+			$(document).on('scroll', function () {
+			    if (offset <= $(window).scrollTop()) {
+			        $meuMenu.addClass('.fixar');
+			    } else {
+			        $meuMenu.removeClass('.fixar');
+			    }
+			});
+
+		</script>
+
+	</body>
+</html>
